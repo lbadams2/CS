@@ -1,0 +1,13 @@
+the references in these examples will refer to FullTimeEmployee objects which have an equals method comparing name and grossPay.
+
+reflexivity - for any reference, invoke the equals method for its corresponding object, and pass the same reference as an argument to the method, it will always return true.
+
+symmetry - for two different references x and y referring to different objects, invoke the equals method of the object referred to by x and pass in y to obtain result1.  Invoke the equals method on the object referred to by y and pass in x to obtain result2.  result1 and result2 will always have the same boolean value.
+this would also be true if each reference referred to the same object.
+
+transitivity - for three different references x, y, and z referring to 3 different objects, each with the same name and grossPay. Invoke the equals method of the object referred to by x and pass in y, this will return true.  Invoke the equals method of the object referred to by y and pass in z, this will also return true. Then x.equals(z) will return true as well.
+this would also be true if each reference referred to the same object.
+
+consistency - for two different references x and y not referring to null, referring to two different objects, repeated invocations of x.equals(y) will return the same true if the objects pointed to have the same name and grossPay, or false if name or grossPay is different.
+
+actuality - for a reference x which does not point to null, x.equals(null) will return false

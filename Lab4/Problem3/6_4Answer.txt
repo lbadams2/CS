@@ -1,0 +1,1 @@
+I hypothesized that there would be a ClassCastException thrown at runtime when attempting to cast the object returned by clone(), however this did not happen, the cast was successful and "yes" was printed.  However this is not desired behavior for a list that is supposed to contain integers.
