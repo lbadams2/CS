@@ -1,1 +1,0 @@
-The answer to the multiple choice is A.  My program ArrayListExp prints this to the console.
