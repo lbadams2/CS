@@ -1,0 +1,15 @@
+Hypothesis:
+first call to previous() returns t, second call returns f
+r, e, f, t after adding 'e' then 'r'
+first call to next() returns 'r'
+r, e, c, e, f, t after two more adds
+p, r, e, c, e, f, t on final println()
+
+Actual:
+after inserting f, next index is 1
+inserts t after f, next() would return element after f if called right after inserting f, increment nextIndex to 2
+after inserting t, next index is 2, call to previous makes it 1 then another call makes it 0. 
+e is inserted before f, next index is then incremented to 1, r is inserted before f, next index incremented to 2
+next() increments next index to 3
+e is inserted before t, next index incremented to 4
+c is inserted before t, next index incremented to 5

@@ -1,0 +1,24 @@
+Lab 7:
+The inefficient recursive method is O(2^n) as stated in the lecture notes.  There is a redundancy, each call to this method will repeat the same calls as every other invocation, can be pictured as a tree where each node's children are repeated method calls from another node. 
+
+The iterative and efficient methods are O(n), the for loop in the iterative version is cycled through n times, and the efficient recursive method is called n times.
+
+From my perspective the formula version should be O(1), however the time grows with n.  The complexity of this method depends on the implementation of Math.pow().
+
+c(1) = 1
+c(2) = 1
+c(3) = 1 + c(2) + c(1) = 3
+c(4) = 1 + c(3) + c(2) = 5
+c(5) = 1 + c(4) + c(3) = 9
+c(6) = 1 + c(5) + c(4) = 15
+
+f(3) = 2
+f(4) = 3
+f(5) = 5
+f(6) = 8
+
+Answer to multiple choice is B, c(n) = 2*f (n) - 1
+
+
+Lab 9:
+Answer to multiple choice is B
